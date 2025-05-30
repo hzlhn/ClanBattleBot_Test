@@ -1,0 +1,6 @@
+discord.py
+isort
+gspread-asyncio
+oauth2client
+jaconv
+yarl==1.9.1 

@@ -1,0 +1,18 @@
+[[source]]
+name = "pypi"
+verify_ssl = true
+url = "https://pypi.org/simple"
+
+[requires]
+python_version = "3.9"
+
+[packages]
+"discord.py" = "*"
+isort = "*"
+gspread-asyncio = "*"
+oauth2client = "*"
+jaconv = "*"
+yarl = "==1.9.1"
+
+[dev-packages]
+flake8 = "*"
