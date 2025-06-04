@@ -1,4 +1,4 @@
-How to use:
+# How to use:
 
-1. Rename "setting_template.py" into "setup.py"
-2. enter your discord bot token and database path
+1. Get your own Discord token from Discord application platform
+2. fill it in the setup.py. And then start !
