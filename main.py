@@ -18,13 +18,13 @@ INITIAL_EXTENSIONS = [
 class MyBot(commands.Bot):
     def __init__(self, command_prefix, intents):
         super().__init__(command_prefix, intents=intents, help_command=None)
-        for cog in INITIAL_EXTENSIONS:
-            try:
-                self.load_extension(cog)
-            except Exception:
-                traceback.print_exc()
 
     async def setup_hook(self):
+        for cog in INITIAL_EXTENSIONS:
+            try:
+                await self.load_extension(cog)
+            except Exception:
+                traceback.print_exc()
         await self.tree.sync()
 
     async def on_ready(self):
